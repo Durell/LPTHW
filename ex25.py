@@ -17,7 +17,7 @@ def print_last_word(words):
     word = words.pop(-1)
     print word
 
-def sort_sentences(sentences):
+def sort_sentence(sentence):
     """Takes in a full sentence and returns the sorted words."""
     words = break_words(sentence)
     return sort_words(words)
