@@ -23,11 +23,14 @@ def secret_formula(started):
     crates = jars / 100
     return jelly_beans, jars, crates
 
-start_point = 1000
+start_point = 10000
+# create variables beans, jars, crates and set them to secret_formula which
+# returns 3 seperatve values. May set all values to one variable to be worked
+# with, but this allows to use as seperate variables immediately on one line
 beans, jars, crates = secret_formula(start_point)
 
 print "With a starting point of: %d" % (start_point)
-print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
+print "We'd have %d beans, %d jars, and %d crates." % (crates)
 
 start_point = start_point / 10
 
